@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password generator</title>
+</head>
+
+<body>
+    <div class="continer">
+        <h1>Password Generator</h1>
+        <div class="password">
+            <div class="pass_continer">
+                <input id="text" type="text" disabled>
+                <i id="copyBtn" class="fa-solid fa-copy"></i>
+                <i id="showCopy" class="fa-solid fa-check"></i>
+            </div>
+        </div>
+        <div class="text-continer">
+
+            <div class="main">
+                <div>
+                    <label for="password">Password Length</label>
+                </div>
+                <div>
+                    <input id="range" type="range" min="6" max="24" value="12">
+                    <span id="passwordLength">12</span>
+                </div>
+
+            </div>
+
+            <div class="main">
+                <label for="uppercase">Include UpperCaseLetters</label>
+                <input id="upperCheck" type="checkbox" checked>
+            </div>
+
+            <div class="main">
+                <label for="lowercase">Include LowerCaseLetters</label>
+                <input id="lowerCheck" type="checkbox" checked>
+            </div>
+
+            <div class="main">
+                <label for="number">Include Numbers</label>
+                <input id="numberCheck" type="checkbox" checked>
+            </div>
+
+            <div class="main">
+                <label for="symbol">Include Symbols</label>
+                <input id="symbolCheck" type="checkbox" checked>
+            </div>
+        </div>
+        <div class="other_info">
+            <button id="generated"><i><i class="fa-solid fa-key"></i></i>Generated Password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
